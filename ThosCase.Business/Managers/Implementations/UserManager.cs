@@ -80,7 +80,7 @@ namespace ThosCase.Business.Managers.Implementations
                     if (user != null)
                     {
                         _userRepository.Remove(user);
-
+                        _userRepository.SaveAsync();
                         return true;
                     }
                 }

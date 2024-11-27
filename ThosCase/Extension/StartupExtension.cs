@@ -29,6 +29,7 @@ namespace ThosCase.Extension
         {
             services.AddScoped<ICategoryManager, CategoryManager>();
             services.AddScoped<IProductManager, ProductManager>();
+            services.AddScoped<IUserManager, UserManager>();
             services.AddScoped<BusinessManagerFactory>();
         }
         public static void AddRepository(this IServiceCollection services)

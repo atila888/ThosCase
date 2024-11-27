@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Kullanıcı Ekle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div class="page-inner">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Kullanıcı Ekle</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="form-group">
+                                    <label for="name">Adı</label>
+                                    <input type="email" class="form-control" id="name" placeholder="Adı" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="surname">Soyadı</label>
+                                    <input type="email" class="form-control" id="surname" placeholder="Soyadı" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="username">Kullanıcı Adı</label>
+                                    <input type="email" class="form-control" id="username" placeholder="Kullanıcı Adı" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Hash Şifre</label>
+                                    <input type="email" class="form-control" id="password" placeholder="Hash Şifre" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <button class="btn btn-success" onclick="btnSaveClick()" id="btnSave">Kaydet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/user/new-user.js"></script>

@@ -82,7 +82,6 @@ function getCategory() {
 }
 //Kaydet Butonuna tıklandığında çalışan function
 function btnUpdateClick() {
-    console.log("test");
     if (btnSaveClickValidation()) {
         $.ajax({
             type: "POST",
