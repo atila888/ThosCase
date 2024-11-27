@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Ürün Ekle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div class="page-inner">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Ürün Ekle</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="form-group">
+                                    <label for="producName">Ürün Adı</label>
+                                    <input type="email" class="form-control" id="producname" placeholder="Ürün Adı" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="categoryList">Kategori Seçiniz</label>
+                                    <select class="form-select" id="categoryList">
+                                        <option>Veriler Yükleniyor</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email2">Fiyat</label>
+                                    <input type="email" class="form-control" id="price" placeholder="Fiyat" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email2">Resim URL</label>
+                                    <input type="email" class="form-control" id="imagepath" placeholder="Resim URL" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <button class="btn btn-success" onclick="btnSaveClick()" id="btnSave">Kaydet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/product/new-product.js"></script>
